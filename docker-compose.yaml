@@ -1,0 +1,10 @@
+services:
+
+    test:
+      build:
+        context: .
+      container_name: test
+      stdin_open: true
+      tty: true  
+      volumes:
+        - ./app:/var/www/test
